@@ -1,0 +1,136 @@
+/* App.css */
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f5f6fa;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.App {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.5em;
+  color: #333333;
+  margin-bottom: 20px;
+}
+
+img {
+  border-radius: 50%;
+  margin-bottom: 20px;
+  border: 2px solid #e0e0e0;
+}
+
+button {
+  background-color: #4267b2;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 20px;
+}
+
+button:hover {
+  background-color: #365899;
+}
+
+select {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  margin-bottom: 20px;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.card {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h3 {
+  font-size: 1.2em;
+  color: #333333;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 1.1em;
+  color: #555555;
+}
+
+.error {
+  color: red;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+a {
+  text-decoration: none;
+  color: #4267b2;
+  font-size: 14px;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+@media (max-width: 600px) {
+  .App {
+    padding: 10px;
+    width: 100%;
+  }
+
+  h2 {
+    font-size: 1.2em;
+  }
+
+  button, select {
+    width: 100%;
+    padding: 15px;
+    font-size: 14px;
+  }
+
+  .cards-container {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    padding: 15px;
+  }
+}
+
+button:focus {
+  outline: 3px solid #4267b2;
+  outline-offset: 2px;
+}
